@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>DISPLAY EMP TABLE</h1>
+        <table border="3px">
+            <tr>
+                <th>Emp_no</th>
+                <th>Emp_name</th>
+                <th>Emp_job</th>
+                <th>Emp_mgr</th>
+                <th>Hiredate</th>
+                <th>Emp_sal</th>
+                <th>comm</th>
+                <th>Dept_no</th>
+            </tr>
+            {% for i in empd %}
+            <tr>
+                <td>{{i.Empno}}</td>
+                <td>{{i.Ename}}</td>
+                <td>{{i.Job}}</td>
+                <td>{{i.Mgr}}</td>
+                <td>{{i.Hiredate}}</td>
+                <td>{{i.sal}}</td>
+                <td>{{i.comm}}</td>
+                <td>{{i.Dept_no}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+    
+</body>
+</html>
